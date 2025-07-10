@@ -23,8 +23,13 @@
 
 ### Шаги по установке
 
-1. Клонируйте репозиторий:
-
-   ```bash
-   git clone https://github.com/Ramin12121/PRACA
-   cd ваш_репозиторий
+```bash
+git clone https://github.com/Ramin12121/PRACA
+cd ваш_репозиторий
+docker-compose up -d
+cd ../frontend
+npm install
+npm start
+cd ../backend
+go mod tidy
+go run main.go
